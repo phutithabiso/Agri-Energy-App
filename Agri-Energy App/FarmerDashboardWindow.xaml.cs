@@ -23,7 +23,7 @@ namespace Agri_Energy_App
             // Load default view
             ShowProductsPage();
         }
-
+        
         private void ShowProductsPage()
         {
             var productsPage = new ProductsPageView(_currentUser, _dbContext);
@@ -35,7 +35,7 @@ namespace Agri_Energy_App
         {
             ShowProductsPage();
         }
-
+        // Event handlers for buttons
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
         {
             var addProductPage = new AddProductPage(_currentUser, _dbContext);
@@ -48,18 +48,21 @@ namespace Agri_Energy_App
             };
             mainContentFrame.Navigate(addProductPage);
         }
+        // Event handler for the "View Products" button
         private void BtnSearchProducts_Click(object sender, RoutedEventArgs e)
         {
             var searchPage = new ProductSearchPage(_currentUser, _dbContext);
             mainContentFrame.Navigate(searchPage);
         }
 
+        // Event handler for the "View Farmers" button
         private void btnFarmerDetails_Click(object sender, RoutedEventArgs e)
         {
             var profilePage = new FarmerProfilePage(_currentUser, _dbContext);
             mainContentFrame.Navigate(profilePage);
         }
 
+        // Event handler for the "View Transactions" button
         private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show("Are you sure you want to log out?",
@@ -79,7 +82,7 @@ namespace Agri_Energy_App
                 this.Close();
             }
         }
-
+        // Event handler for the "Close" button
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
