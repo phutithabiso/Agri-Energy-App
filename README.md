@@ -1,48 +1,48 @@
-# Agri-Energy Connect Platform
+# 🌿 Agri-Energy Connect Platform
 
-## Overview
+## 📌 Overview
 
-Agri-Energy Connect is a WPF-based desktop enterprise application developed using C# in Visual Studio. It connects South African farmers with green energy technology providers, enabling efficient product management, user role handling, and data validation in a secure and scalable system.
-
-This README provides detailed setup instructions, system requirements, core features, and usage guidelines for both technical and non-technical stakeholders.
+Agri-Energy Connect is a WPF-based enterprise desktop application developed in C# using Visual Studio. It bridges South African farmers with green energy technology providers, enabling efficient data entry, secure role-based access, and seamless product management. This prototype demonstrates enterprise-grade architecture, secure authentication, and responsive design for both farmers and employees.
 
 ---
 
-## 📦 Features
+## 🚀 Features
 
 ### 👨‍🌾 Farmer Role:
 - Secure login.
-- Add new green-agriculture products.
-- View and manage own product listings.
+- Add new green agriculture products.
+- View and manage personal product listings.
 
 ### 👩‍💼 Employee Role:
 - Add and manage farmer profiles.
-- View and filter products submitted by all farmers.
-- Search by category and production date.
+- View all products from any farmer.
+- Filter by product type or production date.
 
-### 🔐 Authentication:
-- Secure login with role-based access (Farmer or Employee).
-- Password hashing for credential protection.
+### 🔐 Security & Authentication:
+- Role-based login with hashed passwords.
+- Encrypted credentials to ensure data privacy.
 
-### 📊 User Interface:
-- Clean, responsive WPF UI using XAML.
-- Real-time data binding with Entity Framework Core.
+### 🖼️ UI & UX:
+- Built using WPF and XAML for responsive desktop UI.
+- Intuitive navigation for easy user experience.
 
-### 🛠️ Data Management:
-- SQL Server database integration via Entity Framework Core.
-- Validation checks for all form entries (e.g., product name, production date).
-- Error handling for improved stability.
+### 📦 Data Management:
+- Uses Entity Framework Core with SQL Server.
+- Form validation and error handling to maintain data accuracy.
+- Support for database migrations and seed data.
 
 ---
 
-## ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
-- **Frontend:** WPF (Windows Presentation Foundation)
-- **Backend:** C# (Object-Oriented)
-- **Database:** Microsoft SQL Server
-- **ORM:** Entity Framework Core
-- **IDE:** Visual Studio 2022 or newer
-- **Others:** Azure Monitor, GitHub Actions (for DevOps CI/CD)
+| Layer           | Technology                      |
+|----------------|----------------------------------|
+| Frontend        | WPF (Windows Presentation Foundation), XAML |
+| Backend         | C# (Object-Oriented Programming) |
+| Database        | SQL Server                      |
+| ORM             | Entity Framework Core           |
+| Dev Environment | Visual Studio 2022 or newer     |
+| CI/CD           | GitHub Actions (optional)       |
 
 ---
 
@@ -50,18 +50,18 @@ This README provides detailed setup instructions, system requirements, core feat
 
 | Component       | Minimum Requirement             |
 |----------------|----------------------------------|
-| OS             | Windows 10 or newer              |
-| .NET Runtime   | .NET 6 SDK or newer              |
-| Database       | SQL Server 2019 or newer         |
-| RAM            | 4 GB (8 GB recommended)          |
-| Disk Space     | Minimum 200 MB for database      |
-| Tools Required | Visual Studio, SQL Server Mgmt Studio |
+| OS              | Windows 10 or newer              |
+| .NET Runtime    | .NET 6 SDK or later              |
+| Database        | SQL Server 2019 or newer         |
+| RAM             | 4 GB (8 GB recommended)          |
+| Disk Space      | 200 MB minimum                   |
+| Tools           | Visual Studio, SSMS              |
 
 ---
 
-## 🚀 Setup Instructions
+## 📂 Setup Instructions
 
-1. **Clone the repository:**
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/phutithabiso/Agri_Energy_App.git
-cd Agri_Energy_App
+   cd Agri_Energy_App
