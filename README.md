@@ -63,5 +63,5 @@ This README provides detailed setup instructions, system requirements, core feat
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/agri-energy-connect.git
-   cd agri-energy-connect
+   git clone https://github.com/phutithabiso/Agri_Energy_App.git
+cd Agri_Energy_App
