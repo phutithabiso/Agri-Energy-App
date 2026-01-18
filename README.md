@@ -1,7 +1,4 @@
 # 🌱 Agri-Energy Connect  
-Enterprise Application Development | Rosebank College  
-**Student:** Phuti Phaka (ST10219717)  
-**Date:** June 2025  
 
 ---
 
