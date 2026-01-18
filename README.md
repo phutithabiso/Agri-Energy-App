@@ -1,15 +1,17 @@
-# 🌱 Agri-Energy Connect  
+# 🌱 Agri-Energy App  
+
+A **C# WPF desktop application** built in **Visual Studio** with **SQL Server** integration.  
+This project is a prototype academic application demonstrating CRUD operations, role-based authentication, and database connectivity for managing agricultural products and farmers.  
 
 ---
 
-## 📖 Project Overview
-Agri-Energy Connect is an enterprise application designed to bridge South Africa’s agricultural sector with renewable energy providers. The platform empowers farmers to list products, connect with eco-conscious buyers, and access green energy solutions. Employees and stakeholders can monitor agricultural trends, register farmers, and analyze data for sustainable growth.
+## 📖 Project Description
+Agri-Energy App allows **Farmers** and **Employees** to interact with agricultural product data in a simple, role-based system.  
 
-This project demonstrates:
-- Performance-driven prototype development  
-- Agile + DevOps methodologies  
-- Enterprise architecture frameworks (TOGAF + ITIL)  
-- Secure database integration and role-based authentication  
+- **Farmers** can register, log in, and manage their own products (add, edit, delete, search).  
+- **Employees** can register new farmers, view all farmers, and access all products in the system.  
+- **Authentication** is role-based, with secure login and error handling for invalid credentials.  
+- **Database** is implemented using **Entity Framework Core**, with sample data preloaded for demonstration.  
 
 ---
 
@@ -17,82 +19,35 @@ This project demonstrates:
 ### 👩‍🌾 Farmers
 - Register and manage personal profiles  
 - Add new agricultural products (name, category, production date, description)  
-- View, edit, and delete product listings  
-- Search products with filters  
-- Offline accessibility for rural regions  
+- View, edit, and delete their own products  
+- Search products by name or category  
 
 ### 🧑‍💼 Employees
-- Register new farmers into the system  
+- Register new farmers  
 - View all farmers and their details  
-- Access and filter all products by category, date, or farmer  
-- Analyze agricultural trends and performance  
+- Access all products in the system  
+- Filter products by category or date  
 
 ### 🔐 Authentication
-- Secure login with hashed passwords  
+- Login with email + password  
 - Role-based access (Farmer vs Employee)  
-- Error handling for invalid credentials and registration issues  
+- Error handling for invalid login/registration attempts  
 
 ---
 
-## 🗄️ Database Development
-- **SQL Server + Entity Framework Core** for relational data management  
-- **Tables:** Users, Farmers, Products  
-- **Relationships:** Farmer ↔ Products, Users ↔ Roles  
-- **Sample Data:** Preloaded for demonstration (e.g., fruits, vegetables, dairy products)  
-
----
-
-## ⚡ Performance Optimizations
-### Prototype
-- Profiling & diagnostics with VisualVM and dotMemory  
-- Code efficiency improvements (flattened loops, removed redundancy)  
-- In-memory caching for repetitive data  
-- Load testing with Apache JMeter  
-
-### Final Product Guidelines
-- Microservices architecture for modular scalability  
-- Asynchronous background tasks (email dispatch, audit logging)  
-- Optimized database queries with indexes and pooling  
-- Observability with Azure Monitor + App Insights  
-- CI/CD pipelines with performance-driven testing  
-
----
-
-## 🛠️ Methodologies
-### Agile (Scrum)
-- Iterative delivery via sprints  
-- Early stakeholder feedback (farmers, cooperatives, marketing teams)  
-- Low-risk releases with MVP-first approach  
-- Adaptability to regulatory changes  
-
-### DevOps Integration
-- Automated pipelines with GitHub Actions + Azure DevOps  
-- CI/CD for rapid, reliable deployments  
-- Infrastructure as Code (Azure Resource Manager templates)  
-- Continuous monitoring with telemetry  
-- Tools: Postman, Docker, Kubernetes, Jenkins  
-
-### Architecture Frameworks
-- **TOGAF:** Strategic alignment, ADM cycle, architecture repository  
-- **ITIL:** Service-centric delivery, SLA/KPI tracking, incident/change management  
-- **Zachman (Supplementary):** Classification schema for modeling  
+## 🗄️ Database
+- **SQL Server** database with tables for:
+  - `Users` (Id, FirstName, LastName, Email, PasswordHash, Role, DateRegistered, LastLogin)  
+  - `Products` (Id, Name, Category, ProductionDate, Description, FarmerId)  
+- Sample data is preloaded (e.g., Banana, Apple, Carrot, Rice).  
 
 ---
 
 ## 🖥️ Tech Stack
 - **Frontend:** WPF (XAML, C#)  
-- **Backend:** ASP.NET Core, Entity Framework Core, SQL Server  
-- **DevOps Tools:** GitHub Actions, Azure DevOps, Docker, Kubernetes, Jenkins  
-- **Monitoring:** Azure Monitor, App Insights  
-- **Testing:** Apache JMeter, Postman  
-
----
-
-## 📈 Business Value
-- **Empowerment:** Farmers gain visibility in eco-conscious markets  
-- **Efficiency:** Centralized digital platform reduces manual errors  
-- **Sustainability:** Aligns agriculture with renewable energy initiatives  
-- **Storytelling:** Positions the system as a digital bridge between rural farming and green technology  
+- **Backend:** Entity Framework Core  
+- **Database:** SQL Server  
+- **IDE:** Visual Studio  
 
 ---
 
